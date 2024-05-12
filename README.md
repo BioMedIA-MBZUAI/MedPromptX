@@ -23,8 +23,8 @@ Mai A. Shaaban, Adnan Khan, Mohammad Yaqub [<img src='img/ORCIDiD_icon64x64.png'
 * Extracting the logical patterns discerned from the few-shot data efficiently by implementing a new dynamic proximity selection technique, which allows for the capture of the underlying semantics.
 
 ## :fire: News
-- **`2024/03/26`**: Code is available Now!
-- **`Soon`**: The MedPromptX-VQA dataset will be released.
+- **`2024/03/26`**: Code is released!
+- **`2024/05/12`**: The MedPromptX-VQA dataset is released!
 
 
 ## :hammer_and_wrench: Install  
