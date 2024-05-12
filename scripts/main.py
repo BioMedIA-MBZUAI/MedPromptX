@@ -84,8 +84,8 @@ def main():
     Step 1: Load data
     """
 
-    if args.aws == True:
-        root_dir = f"/tmp/{args.data_path}"
+    if args.aws == "True":
+        root_dir = args.data_path
     else:
         # TODO: change this to your local path
         root_dir = f"/l/users/mai.kassem/datasets/MedPromptX/{args.data_path}"

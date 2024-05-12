@@ -1,0 +1,5 @@
+scripts/__pycache__
+scripts/wandb
+scripts/src/__pycache__
+scripts/logs
+data/__pycache__

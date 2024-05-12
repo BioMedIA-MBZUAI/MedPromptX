@@ -1,0 +1,6 @@
+('Cardiac Output (thermodilution)', 0.2399728281949062)
+('Bladder Scan Estimate', 0.19423866063100978)
+('Ammonia', 0.17250772371306314)
+('Serum Osmolality', 0.1382359673135611)
+('PBP (Prefilter) Replacement Rate', 0.12291000662741125)
+('Current Goal', 0.07233989396203888)
