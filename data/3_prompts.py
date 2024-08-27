@@ -4,7 +4,7 @@ import os
 import shutil
 import random
 
-img_root_path = "/nvme/datasets/physionet.org/files/mimic-cxr-jpg/2.0.0/"
+img_root_path = "/physionet.org/files/mimic-cxr-jpg/2.0.0/"
 
 SEED = 1
 
@@ -43,11 +43,15 @@ for d in datasets:
     df = df.astype({"subject_id": "str"})
     df = df.astype({"hadm_id": "str"})
     df = df.astype({"stay_id": "str"})
+    df = df.astype({"study_id": "str"})
 
     # Filter the dataframe where the label column is equal to 1
     positive_df = df[df[d] == 1]
     negative_df = df[df[d] == 0]
-    if len(positive_df) <= NUM_SHOTS_PER_CLASS or len(negative_df) <= NUM_SHOTS_PER_CLASS:
+    if (
+        len(positive_df) <= NUM_SHOTS_PER_CLASS
+        or len(negative_df) <= NUM_SHOTS_PER_CLASS
+    ):
         continue
     else:
         counts_labels += 1
@@ -149,11 +153,13 @@ for d in datasets:
             + positive_df["stay_id"][i]
         )
         prompts_dict_multimodal[key] = {
+            "test_study_id": str(positive_df["study_id"][i]),
             "images": prompt_images,
             "prompt": test_prompt_multimodal,
             "label": 1,
         }
         prompts_dict_image_only[key] = {
+            "test_study_id": str(positive_df["study_id"][i]),
             "images": prompt_images,
             "prompt": test_prompt_image_only,
             "label": 1,
@@ -190,11 +196,13 @@ for d in datasets:
             + negative_df["stay_id"][i]
         )
         prompts_dict_multimodal[key] = {
+            "test_study_id": str(negative_df["study_id"][i]),
             "images": prompt_images,
             "prompt": test_prompt_multimodal,
             "label": 0,
         }
         prompts_dict_image_only[key] = {
+            "test_study_id": str(negative_df["study_id"][i]),
             "images": prompt_images,
             "prompt": test_prompt_image_only,
             "label": 0,
@@ -255,11 +263,13 @@ for d in datasets:
             + positive_df["stay_id"][i]
         )
         prompts_dict_multimodal[key] = {
+            "study_id": str(positive_df["study_id"][i]),
             "images": prompt_images,
             "prompt": test_prompt_multimodal,
             "label": 1,
         }
         prompts_dict_image_only[key] = {
+            "study_id": str(positive_df["study_id"][i]),
             "images": prompt_images,
             "prompt": test_prompt_image_only,
             "label": 1,
@@ -291,11 +301,13 @@ for d in datasets:
             + negative_df["stay_id"][i]
         )
         prompts_dict_multimodal[key] = {
+            "study_id": str(negative_df["study_id"][i]),
             "images": prompt_images,
             "prompt": test_prompt_multimodal,
             "label": 0,
         }
         prompts_dict_image_only[key] = {
+            "study_id": str(negative_df["study_id"][i]),
             "images": prompt_images,
             "prompt": test_prompt_image_only,
             "label": 0,
