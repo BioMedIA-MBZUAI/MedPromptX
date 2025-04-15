@@ -1,12 +1,12 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/medpromptx-grounded-multimodal-prompting-for/x-ray-visual-question-answering-on-mimic-cxr)](https://paperswithcode.com/sota/x-ray-visual-question-answering-on-mimic-cxr?p=medpromptx-grounded-multimodal-prompting-for)
 # MedPromptX: Grounded Multimodal Prompting for Chest X-ray Diagnosis
-Mai A. Shaaban, Adnan Khan, Mohammad Yaqub [<img src='img/ORCIDiD_icon64x64.png' width='15'>](https://orcid.org/0000-0001-6896-1105)
+Mai A. Shaaban [<img src='img/ORCIDiD_icon64x64.png' width='15'>](https://orcid.org/0000-0003-1454-6090), Adnan Khan [<img src='img/ORCIDiD_icon64x64.png' width='15'>](https://orcid.org/0000-0002-0583-9863), Mohammad Yaqub [<img src='img/ORCIDiD_icon64x64.png' width='15'>](https://orcid.org/0000-0001-6896-1105)
 
 <img src='img/mbzuai_logo.png' width='100'> **Mohamed bin Zayed University of Artificial Intelligence, Abu Dhabi, UAE**
 
 <img src='img/carleton_logo.png' width='100'> **School of Computer Science, Carleton University, Ottawa, CA**
 
-[![Static Badge](https://img.shields.io/badge/Paper-Link-yellowgreen?link=https%3A%2F%2Fzenodo.org%2Frecords%2F10104139)](https://arxiv.org/abs/2403.15585)
+[![Static Badge](https://img.shields.io/badge/Paper-Link-yellowgreen?link=https%3A%2F%2Fzenodo.org%2Frecords%2F10104139)](https://link.springer.com/chapter/10.1007/978-3-031-84525-3_18)
 [![python](https://img.shields.io/badge/Python-3.8-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
 [![pytorch](https://img.shields.io/badge/PyTorch-2.1.0-EE4C2C.svg?style=flat&logo=pytorch)](https://pytorch.org)
 
@@ -62,11 +62,15 @@ Now, you should be all set.
 If you find our work helpful for your research, please consider citing the following BibTeX entry.   
 
 ```bibtex
-@article{shaaban2024medpromptx,
-      title={MedPromptX: Grounded Multimodal Prompting for Chest X-ray Diagnosis}, 
-      author={Mai A. Shaaban and Adnan Khan and Mohammad Yaqub},
-      year={2024},
-      url={https://arxiv.org/abs/2403.15585},
+@inproceedings{shaaban2025medpromptx,
+	title        = {MedPromptX: Grounded Multimodal Prompting for~Chest X-Ray Diagnosis},
+	author       = {Shaaban, Mai A. and Khan, Adnan and Yaqub, Mohammad},
+	year         = {2025},
+	booktitle    = {Medical Image Computing and Computer Assisted Intervention -- MICCAI 2024 Workshops},
+	publisher    = {Springer Nature Switzerland},
+	address      = {Cham},
+	pages        = {211--222},
+	isbn         = {978-3-031-84525-3}
 }
 ```
 
