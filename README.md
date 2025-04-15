@@ -1,4 +1,4 @@
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/medpromptx-grounded-multimodal-prompting-for/x-ray-visual-question-answering-on-mimic-cxr)](https://paperswithcode.com/sota/x-ray-visual-question-answering-on-mimic-cxr?p=medpromptx-grounded-multimodal-prompting-for)
+
 # MedPromptX: Grounded Multimodal Prompting for Chest X-ray Diagnosis
 Mai A. Shaaban [<img src='img/ORCIDiD_icon64x64.png' width='15'>](https://orcid.org/0000-0003-1454-6090), Adnan Khan [<img src='img/ORCIDiD_icon64x64.png' width='15'>](https://orcid.org/0000-0002-0583-9863), Mohammad Yaqub [<img src='img/ORCIDiD_icon64x64.png' width='15'>](https://orcid.org/0000-0001-6896-1105)
 
