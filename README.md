@@ -40,7 +40,7 @@ Install dependencies: (we assume GPU device / cuda available):
 
 Now, you should be all set.
 
-## :arrow_forward: Demo  
+## :arrow_forward: Usage  
 
 1. Go to scripts/   
 
